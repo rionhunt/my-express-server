@@ -1,6 +1,7 @@
 //jshint esversion:6
 
 //add express.js to out dependences
+const { response } = require("express");
 const express = require("express");
 
 //app is associated with our instance of express.js
@@ -10,7 +11,7 @@ const app = express();
 // req is request, res is response. (It could be anything)
 // cause its function parameters. It's best practice.
 app.get("/", function (req, res) {
-  response.send("<h1>Hello World!</h1>");
+  res.send("<h1>Hey All!</h1>");
 });
 
 //server is listening to port 3000
